@@ -3,25 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="two.css" />
     <title>Document</title>
   </head>
   <body>
     <h2>contact us</h2>
     <form>
       <label for="name">Name</label> <br />
-      <input type="text" id="name" name="name" /><br /><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
       <label for="email">Email</label> <br />
-      <input type="email" id="email" name="email" /><br /><br />
+      <input type="email" id="email" name="email" required /><br /><br />
 
       <label for="phone">Phone</label> <br />
-      <input type="tel" id="phone" name="phone" /><br /><br />
+      <input type="tel" id="phone" name="phone" required /><br /><br />
 
       <label for="country">Country</label> <br />
-      <input type="country" id="country" name="country" /><br /><br />
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="USA">United States</option>
+        <option value="CAN">Canada</option>
+        <option value="GBR">United Kingdom</option>
+        <option value="AUS">Australia</option>
+        <option value="DEU">Germany</option>
+        <option value="FRA">France</option>
+        <option value="ITA">Italy</option>
+        <option value="ESP">Spain</option>
+        <option value="NLD">Netherlands</option>
+        <option value="CHE">Switzerland</option>
+        <option value="SWE">Sweden</option>
+        <option value="NOR">Norway</option>
+        <option value="DNK">Denmark</option>
+        <option value="FIN">Finland</option>
+        <option value="JPN">Japan</option>
+        <option value="CHN">China</option>
+        <option value="IND">India</option>
+        <option value="BRA">Brazil</option>
+        <option value="MEX">Mexico</option>
+        <option value="ARG">Argentina</option></select
+      ><br /><br />
 
       <label for="comments">comments:</label> <br />
-      <textarea name="comments" id="comments"></textarea> <br />
+      <textarea name="comments" id="comments" required></textarea> <br />
       <br />
       <input type="submit" value="submit" />
     </form>
