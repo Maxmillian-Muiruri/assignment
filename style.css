@@ -1,0 +1,10 @@
+ul {
+  list-style-type: none;
+}
+ul li::before {
+  content: "\25C6"; /* Unicode for diamond shape */
+  color: black;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
